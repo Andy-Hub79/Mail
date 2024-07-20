@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.outer-container {
+    background-color: #484242;
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+.email-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.header {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.header img {
+    width: 24px;
+    height: 24px;
+}
+.top-bar {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+}
+.content h1 {
+    color: #333333;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas pequeñas */
+}
+.feature {
+    width: 30%;
+    margin-bottom: 20px;
+}
+.feature-icon {
+    width: 70px; /* Aumentar el tamaño de los iconos */
+    height: 70px;
+}
+.about {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas pequeñas */
+}
+.about .text {
+    flex: 1;
+    padding: 20px;
+}
+.about .image {
+    flex: 1;
+    padding: 20px;
+}
+.about .image img {
+    width: 100%;
+    height: auto;
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas pequeñas */
+}
+.service {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logoDN {
+    width: auto;
+}
+.textDN {
+    color: #00AEEF;
+}
+.text {
+    background-color: #00AEEF;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.btnConfirm{
+    color: #ffffff; 
+    text-decoration: none; 
+    background-color: #333333; 
+    padding: 10px 20px; 
+    display: inline-block;
+}
+
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en pantallas pequeñas */
+}
+.footer-bottom {
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer-bottom a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 600px) {
+    .features {
+        flex-direction: column;
+    }
+    .feature {
+        width: 100%;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .services {
+        flex-direction: column;
+    }
+    .service {
+        width: 100%;
+    }
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+}
