@@ -1,78 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .outer-container {
+        background-color: #484242;
+        padding: 20px;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+      }
+      .header {
+        background-color: black;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+      }
+      .header a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+      .header img {
+        width: 24px;
+        height: 24px;
+      }
+      .top-bar {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+      }
+      .hero-image {
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+      .content h1 {
+        color: #333333;
+      }
+
+      .features {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+      .feature {
+        width: 30%;
+        margin-bottom: 20px;
+      }
+      .feature-icon {
+        width: 70px;
+        height: 70px;
+      }
+      .about {
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+      .about .text {
+        flex: 1;
+        padding: 20px;
+      }
+      .about .image {
+        flex: 1;
+        padding: 20px;
+      }
+      .about .image img {
+        width: 100%;
+        height: auto;
+      }
+      .services {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
+      .service {
+        width: 45%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logoDN {
+        width: auto;
+      }
+      .textDN {
+        color: #00aeef;
+      }
+      .text {
+        background-color: #00aeef;
+        color: #ffffff;
+        padding: 20px;
+      }
+
+      .btnConfirm {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #333333;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+
+      /* Estilos para el footer */
+      .footer {
+        background-color: #333333;
+        color: #ffffff;
+      }
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #ffffff;
+        color: #333333;
+        flex-wrap: wrap;
+      }
+      .footer-bottom {
+        background-color: lightgrey;
+        color: black;
+        text-align: center;
+        padding: 10px;
+      }
+      .footer a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+      .footer-bottom a {
+        color: black;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+
+      /* Media Queries para hacer el diseño responsive */
+      @media (max-width: 600px) {
+        .features {
+          flex-direction: column;
+        }
+        .feature {
+          width: 100%;
+        }
+        .about {
+          flex-direction: column;
+        }
+        .services {
+          flex-direction: column;
+        }
+        .service {
+          width: 100%;
+        }
+        .footer-top {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <div class="outer-container">
-        <div class="email-container">
-            <div class="header">
-                <div>
-                    <img src="D&N_BW.png" class="logoDN" style="width: auto;">                
-                </div>
-            </div>
-            <div class="top-bar">
-                <p>
-                    <b>Éxito e Innovación</b>
-                </p> 
-            </div>
-            <img src="img/AdobeStock_818594238.jpeg" alt="Hero Image" class="hero-image">
-            <div class="content">
-                <h1>Estimado Carlos!</h1>
-                <p>En <b>Dinero</b> <b class="textDN">& Negocios</b>, queremos destacar su increíble trayectoria y logros. Nos encantaría invitarlo/a a una entrevista exclusiva para nuestra próxima edición especial.</p>
-            </div>
-            <div class="features">
-                <div class="feature">
-                    <img src="icons/leader.png" alt="imgEjemplo" class="feature-icon">
-                    <h3>Liderazgo y Estrategia</h3>
-                    <p>Explore las mejores prácticas y estrategias de liderazgo para dirigir su negocio hacia el éxito.</p>
-                </div>
-                <div class="feature">
-                    <img src="icons/innov.png" alt="imgEjemplo" class="feature-icon">
-                    <h3>Innovación y Tecnología</h3>
-                    <p>Manténgase al día con las últimas tendencias tecnológicas que están transformando la industria.</p>
-                </div>
-                <div class="feature">
-                    <img src="icons/inv.png" alt="imgEjemplo" class="feature-icon">
-                    <h3>Finanzas y Mercados</h3>
-                    <p>Obtenga tendencias del mercado y consejos para optimizar inversiones.</p>
-                </div>
-            </div>
-            <div class="about">
-                <div class="image">
-                    <img src="icons/int.png" alt="About Hice Mail">
-                </div>
-                <div class="text">
-                    <h2>Acerca de</h2>
-                    <p>Proponemos realizar la entrevista de manera presencial, en su sede o en nuestras oficinas del WTC CDMX, Piso 35, Oficina 26. Nos adaptaremos a su agenda para coordinar la fecha y hora más conveniente.</p>
-                    <a href="#" class="btnConfirm">Confirmar Participación</a>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="footer-top" style="display: flex; justify-content: space-between; padding: 20px; background-color: #ffffff; color: #333333;">
-                    <div class="footer-left">
-                        <h2>¡Esperamos contar su valiosa participación!</h2>
-                        <br>
-                        <h2>Atentamente:</h2>
-                        <p>
-                            <b>Daniel P. Alamillo</b>
-                            <br>
-                            <b>Presidente Ejecutivo</b>
-                            <br>
-                            <b>Revista & Negocios</b>
-                            <br><br>
-                            <a href="https://dineroynegocios.mx/" style="color: #00AEEF; text-decoration: none;"><b>https://dineroynegocios.mx</b></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>© Copy; 2024 Revista Dinero & Negocios. Todos los derechos reservados.</p>
-                </div>
-            </div>
+      <div class="email-container">
+        <div class="header">
+          <div>
+            <img src="D&N_BW.png" class="logoDN" style="width: auto" />
+          </div>
         </div>
+        <div class="top-bar">
+          <p>
+            <b>Éxito e Innovación</b>
+          </p>
+        </div>
+        <img
+          src="https://b9c34337d34eb8aa9af750796c9d08ec.cdn.bubble.io/f1721484025550x666084271734763300/mountains_compressed.jpeg"
+          alt="Hero Image"
+          class="hero-image"
+        />
+        <div class="content">
+          <h1>Estimado/a, {{name}}</h1>
+          <p>
+            En <b>Dinero</b> <b class="textDN">& Negocios</b>, queremos destacar
+            su increíble trayectoria y logros. Nos encantaría invitarlo/a a una
+            entrevista exclusiva para nuestra próxima edición especial.
+          </p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <img
+              src="https://b9c34337d34eb8aa9af750796c9d08ec.cdn.bubble.io/f1721484425636x572432048615635300/leader.png"
+              alt="imgEjemplo"
+              class="feature-icon"
+            />
+            <h3>Liderazgo y Estrategia</h3>
+            <p>
+              Explore las mejores prácticas y estrategias de liderazgo para
+              dirigir su negocio hacia el éxito.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://b9c34337d34eb8aa9af750796c9d08ec.cdn.bubble.io/f1721484431571x973560022733871600/innov.png"
+              alt="imgEjemplo"
+              class="feature-icon"
+            />
+            <h3>Innovación y Tecnología</h3>
+            <p>
+              Manténgase al día con las últimas tendencias tecnológicas que
+              están transformando la industria.
+            </p>
+          </div>
+          <div class="feature">
+            <img
+              src="https://b9c34337d34eb8aa9af750796c9d08ec.cdn.bubble.io/f1721484435741x825418582702713900/inv.png"
+              alt="imgEjemplo"
+              class="feature-icon"
+            />
+            <h3>Finanzas y Mercados</h3>
+            <p>
+              Obtenga tendencias del mercado y consejos para optimizar
+              inversiones.
+            </p>
+          </div>
+        </div>
+        <div class="about">
+          <div class="image">
+            <img src="icons/int.png" alt="About Hice Mail" />
+          </div>
+          <div class="text">
+            <h2>Acerca de</h2>
+            <p>
+              Proponemos realizar la entrevista de manera presencial, en su sede
+              o en nuestras oficinas del WTC CDMX, Piso 35, Oficina 26. Nos
+              adaptaremos a su agenda para coordinar la fecha y hora más
+              conveniente.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send/?phone=5215516897815&text=%C2%A1Hola!%20Confirmo%20mi%20participaci%C3%B3n%20en%20la%20pr%C3%B3xima%20edici%C3%B3n%20de%20Dinero%20y%20Negocios%20%F0%9F%93%B0."
+              class="btnConfirm"
+              >Confirmar Participación</a
+            >
+          </div>
+        </div>
+        <div class="footer">
+          <div
+            class="footer-top"
+            style="
+              display: flex;
+              justify-content: space-between;
+              padding: 20px;
+              background-color: #ffffff;
+              color: #333333;
+            "
+          >
+            <div class="footer-left">
+              <h2>¡Esperamos contar su valiosa participación!</h2>
+              <br />
+              <h2>Atentamente:</h2>
+              <p>
+                <b>Daniel P. Alamillo</b>
+                <br />
+                <b>Presidente Ejecutivo</b>
+                <br />
+                <b>Revista & Negocios</b>
+                <br /><br />
+                <a
+                  href="https://dineroynegocios.mx/"
+                  style="color: #00aeef; text-decoration: none"
+                  ><b>https://dineroynegocios.mx</b></a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              © Copy; 2024 Revista Dinero & Negocios. Todos los derechos
+              reservados.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
